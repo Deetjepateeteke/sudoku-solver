@@ -29,6 +29,7 @@ class SudokuSolver:
                     pretty_print(new_board)
                     print(f"Found solution: ({len(self.visited)} states visited)")
                     print(f"Time taken: {round(time.time() - start_time, 3)} seconds")
+
                     return True
 
                 if convert_board_to_tuple(new_board) not in self.visited:
@@ -36,8 +37,7 @@ class SudokuSolver:
 
                 if self.solve():
                     return True
-                else:
-                    return False
+                return False
             else:
                 print(f"Couldn't find a solution. ({len(self.visited)} states visited)")
                 return False
