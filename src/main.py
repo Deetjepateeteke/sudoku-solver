@@ -1,7 +1,8 @@
 from utils import (
     convert_board_to_tuple,
     get_possible_moves,
-    is_solved, play_move,
+    is_solved,
+    play_move,
     pretty_print
 )
 import time
